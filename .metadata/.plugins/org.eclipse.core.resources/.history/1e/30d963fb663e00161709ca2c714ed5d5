@@ -1,0 +1,15 @@
+package step08.ex04;
+
+
+public class Exam059_5 {
+  public static void main(String[] args) {
+    User user;
+    
+    //1) 스태틱 변수를 사용할 때 클래스가 자동 로딩된다.
+    //User.count = 100;
+    
+    //2) 스태틱 메서드를 호출할 때 클래스가 자동 로딩된다.
+    User.increaseCount();
+    
+  }
+}

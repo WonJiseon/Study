@@ -1,0 +1,10 @@
+/* 주제: 초기화 블록- 스태틱 블록*/
+package step08.ex05;
+
+
+public class Exam061_1 {
+  public static void main(String[] args) {
+   new User(); // 클래스 로딩을 확인하기 위함. 그래서 인스턴스의 주소를 저장할 필요가 없다.
+   
+  }
+}

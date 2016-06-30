@@ -1,0 +1,15 @@
+/* 주제: 상속- 인스턴스 변수의 상속
+ * 상속(inheritance)이란?
+ * => 기존 코드를 중복 작성하지 않고 손쉽게 재사용하기 위한 문법 */
+package step08.ex01;
+
+public class Exam055_2 {
+
+  public static void main(String[] args) {
+    User u1 = new User();
+    
+    u1.name = "홍길동";
+    u1.email = "hong@test.com";
+    u1.password = "1111";
+  }
+}

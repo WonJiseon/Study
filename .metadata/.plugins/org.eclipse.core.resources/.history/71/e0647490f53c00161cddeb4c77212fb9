@@ -1,0 +1,6 @@
+package step07.ex09;
+
+public class ProjextDao {
+  Project[] projects = new Project[100];
+  int i = 0;
+}

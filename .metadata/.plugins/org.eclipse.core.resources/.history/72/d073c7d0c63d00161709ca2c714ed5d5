@@ -1,0 +1,7 @@
+package step08.ex04;
+
+public class Motor {
+  int cc;
+  String maker;
+  
+}

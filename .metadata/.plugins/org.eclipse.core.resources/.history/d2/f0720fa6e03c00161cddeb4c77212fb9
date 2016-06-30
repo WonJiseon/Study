@@ -1,0 +1,13 @@
+package step07.ex09;
+
+public class ContactDao {
+  Contact[] contacts = new Contact[100];
+  int i = 0;
+  
+  void insert() {
+    
+  }
+  Contact[] selectLint() {
+    
+  }
+}

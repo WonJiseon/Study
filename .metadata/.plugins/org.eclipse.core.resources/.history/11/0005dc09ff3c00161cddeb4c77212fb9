@@ -1,0 +1,48 @@
+package step07.ex09;
+
+public class ProjectDao {
+  Project[] projects = new Project[100];
+  int length = 0;
+  
+  // insert() 연산자: 연락처 주소를 내부 메모리에 보관한다.
+  void insert(Project project) {
+    this.projects[this.length++] = project;
+  }
+  
+  // selectList() 연산자: 배열에 저장된 연락처 주소를 뽑아서 리턴한다.
+  Project[] selectList() {
+    Project[] dataArray = new Project[this.length];
+    for (int i = 0; i < this.length; i++) {
+      dataArray[i] = this.projects[i];
+    }
+    return dataArray;
+  }
+  
+  Project selectOne(int no) {
+    if (no >= 0 && no < this.length) {
+      return this.projects[no];
+    }
+    return null;
+  }
+  // update() 연산자: 배열의 특정 위치에 보관된 연락처 주소를 다른 주소로 교체한다.
+  void update(int no, Project project) {
+    this.projects[no] = project;
+  }
+  
+  // delete() 연산자: 배열의 특정 위치에 보관된 연락쳐 주소를 삭제한다.
+  int delete(int no) {
+    if (no >=0 && no < this.length) {
+      for (int i = no; i < this.length; i++) {
+        this.projects[i] = this.projects[i + 1];
+      }
+      this.length--;
+      return 1;
+    }
+    return 0;
+  }
+  
+  // size() 연산자: 배열에 저장된 연락처 주소라 몇 개인지 리턴한다.
+  int size() {
+    return this.length;
+  }
+}

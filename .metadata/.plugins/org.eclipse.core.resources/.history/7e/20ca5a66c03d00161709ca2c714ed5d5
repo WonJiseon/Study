@@ -1,0 +1,10 @@
+package step08.ex04;
+
+
+public class Exam059 {
+  public static void main(String[] args) {
+    User user;
+    Student student;
+    Student2 student2;
+  }
+}

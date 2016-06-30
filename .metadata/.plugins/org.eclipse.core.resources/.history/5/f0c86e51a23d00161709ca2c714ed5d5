@@ -1,0 +1,12 @@
+package step08.ex02;
+
+public class B {
+  static int var3;
+  
+  static void m() {
+    // 스태틱 변수는 클래스 소속이기 때문에 서브클래스가 상속받지 못한다.
+    A.var1 = 100; // 일반적인 사용법 Okay!
+    //var1 = 200; // 오류!
+    var3 = 200;
+  }
+}

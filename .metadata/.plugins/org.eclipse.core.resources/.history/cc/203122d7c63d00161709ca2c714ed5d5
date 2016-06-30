@@ -1,0 +1,10 @@
+package step08.ex04;
+
+public class Motor {
+  int cc;
+  String maker;
+  
+  public Motor() {
+    System.out.println("Motor() 생성자 호출됨);
+  }
+}

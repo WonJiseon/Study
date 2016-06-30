@@ -1,0 +1,9 @@
+package step08.ex04;
+
+
+public class Exam060 {
+  public static void main(String[] args) {
+    SUV c = new SUV();
+    // 생성자 호출은 서브클래스 => 
+  }
+}

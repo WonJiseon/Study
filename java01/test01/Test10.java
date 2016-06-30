@@ -1,0 +1,38 @@
+/*문제
+1) 밑변의 길이를 숫자로 입력 받아 트리를 출력하라.
+   짝수 길이를 입력 받았으면 +1 하여 홀수 만들어 출력한다.
+   예) java Test07 6
+출력 예:
+   *
+  ***
+ *****
+*******
+*/
+
+
+public class Test10 {
+  public static void main(String[] args) {
+    int inputNum = Integer.parseInt(args[0]);
+    //1) 사용자가 입력한 값을 출력하라!
+    //2) 사용자가 입력한 값이 짝수이면 +1한 값을 출력하고
+    //   홀수이면 원래 값을 출력하라!
+    //3) 별을 1개부터 사용자가 입력한 개수까지 출력한다.
+    //4) 별을 1개부터 2씩 증가하면서 입력한 개수까지 출력한다.
+    //5) 첫번째 줄부터 빈칸(입력한 개수 / 2)을 하나씩 줄여가면서 출력한다.
+    if (inputNum % 2 == 0)
+      inputNum++;
+
+    int spaceCount = inputNum / 2;
+    for (int i = 1; i <= inputNum; i += 2) {
+      // 빈칸 출력
+      for (int s = 0; s < spaceCount; s++) {
+        System.out.print(" ");
+      }
+      spaceCount--;
+      
+      for (int j = 0; j < i; j++)
+        System.out.print("*");
+      System.out.println();
+    }
+  }
+}

@@ -1,0 +1,13 @@
+package step08.ex04;
+
+
+public class Exam059_4 {
+  public static void main(String[] args) {
+    Student student1, student2;
+    
+    System.out.println();
+    System.out.println(""---------------------------");
+    student2 = new Student();
+    
+  }
+}

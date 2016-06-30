@@ -1,0 +1,6 @@
+package step08.ex04;
+
+public class Car extends Motor{
+  int capacity;
+  
+}

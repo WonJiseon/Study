@@ -1,0 +1,9 @@
+package step07.ex08;
+
+public class Project {
+  String title;
+  String description;
+  String startDate;
+  String endDate;
+  int status;
+}

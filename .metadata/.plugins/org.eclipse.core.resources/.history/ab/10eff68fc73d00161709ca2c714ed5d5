@@ -1,0 +1,8 @@
+package step08.ex04;
+
+
+public class Exam060 {
+  public static void main(String[] args) {
+    SUV c = new SUV();
+  }
+}

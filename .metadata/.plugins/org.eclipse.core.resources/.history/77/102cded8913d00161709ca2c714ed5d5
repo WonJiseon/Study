@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Test47 {
+  public static void main(String[] args) throws Exception {
+    Scanner keyScanner = new Scanner(System.in);
+    System.out.print("밑변의 길이는? ");
+    int len = Integer.parseInt(keyScanner.nextLine());
+    int starsize = 1, i = 0, spaceSize = len / 2;
+        
+    while(starsize <= len + 1) {
+      System.out.print(" ");
+      spaceSize--;
+      i = 0;
+      while(i < starsize) {
+        System.out.print("*");
+        i += 2;
+      }
+      System.out.println();
+      keyScanner.close();
+    }
+  }
+}

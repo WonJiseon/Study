@@ -1,0 +1,26 @@
+package step07.ex09;
+
+public class ContactDao {
+  Contact[] contacts = new Contact[100];
+  int length = 0;
+  
+  void insert(Contact contact) {
+    this.contacts[this.length++] = contact;
+  }
+  Contact[] selectList() {
+    Contact[] dataArray = new Contact[this.length];
+    for (int i = 0; i < this.length; i++) {
+      dataArray[i] = contacts[i];
+    }
+    return dataArray;
+  }
+  Contact selectOne(int no) {
+    if(no >=0 && no < this.length) {
+      return this.contacts[no];
+    }
+    return null;
+  }
+  void update(Contact contact) {
+    this.contacts[contact.no] = contact;
+  }
+}

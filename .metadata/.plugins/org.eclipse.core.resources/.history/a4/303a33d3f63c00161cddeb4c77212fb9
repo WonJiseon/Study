@@ -1,0 +1,10 @@
+package step07.ex09;
+
+public class ProjectDao {
+  Project[] projects = new Project[100];
+  int length = 0;
+  
+  void insert(Project project) {
+    projects[this.length++] = project;
+  }
+}

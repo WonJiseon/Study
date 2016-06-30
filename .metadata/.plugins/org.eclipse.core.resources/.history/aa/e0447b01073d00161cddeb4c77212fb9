@@ -1,0 +1,6 @@
+package step08.ex01;
+
+public class B {
+  static int s2;
+  int i3;
+}

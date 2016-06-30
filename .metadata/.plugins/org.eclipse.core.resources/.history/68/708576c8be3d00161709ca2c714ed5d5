@@ -1,0 +1,6 @@
+package step08.ex04;
+
+public class Student extends User{
+  String tel;
+  boolean working;
+}

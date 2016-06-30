@@ -1,0 +1,19 @@
+package step07.ex09;
+
+public class MemberDao {
+  Member[] members = new Member[100];
+  int length = 0;
+  
+  void insert(Member member) {
+    for (int i = 0; i < this.length; i++) {
+      
+    }
+  }
+    Member[] selectList() {
+      Member[] dataArray = new Member[this.length];
+      for (int i = 0; i < this.length; i++) {
+        dataArray[i] = members[i];
+      }
+      return dataArray;
+    }
+}

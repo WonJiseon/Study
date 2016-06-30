@@ -1,0 +1,13 @@
+package step08.ex04;
+
+
+public class Exam059 {
+  public static void main(String[] args) {
+    // 1) 레퍼런스 변수는 클래스를 로딩하지 않는다.
+    User user;
+    Student student;
+    Student2 student2; 
+    
+    // 2) 
+  }
+}

@@ -1,0 +1,73 @@
+/* 주제: 레퍼런스 배열 연습 - 명령어들을 재사용하고 관리하기 좋게 블록으로 묶는다.
+ => 예)
+제목? aaaa
+내용? bbbb
+암호? 1111
+계속 입력하시겠습니까?(y/n) y
+제목? abab
+내용? cccc
+암호? 2222
+계속 입력하시겠습니까?(y/n) n
+1, aaaa, bbbb, 1111, 2016-06-22, 0
+2, abab, cccc, 2222, 2016-06-22, 0
+ */
+package step07.ex08;
+
+import java.util.*;
+
+public class BoardController {
+  static Scanner keyScanner;
+  Board[] boards = new Board[100];
+  int i = 0;
+  String boardName;
+
+  public BoardController() {}
+
+  public BoardController(String boardName) {
+    this.boardName = boardName;
+  }
+
+  public  void service() {
+    String command;
+    while (true) {
+      System.out.printf("[메인 > %s]\n");
+      command = keyScanner.nextLine();
+      System.out.println(command);
+    }
+  }
+
+  // 게시물을 출력하는 메서드
+  void printAll() {
+    for (int x = 0; x < this.i; x++) {
+      //번호,제목,작성자,등록일,조회수
+      System.out.printf("%d, %s, %s, %s, %d\n",
+          this.boards[x].no, this.boards[x].title, this.boards[x].writer,
+          this.boards[x].createdDate, this.boards[x].viewCount);
+    }
+  }
+
+  // 사용자에게 예/아니오를 묻는 메서드
+  static boolean prompt() {
+    System.out.print("계속 입력하시겠습니까?(y/n) ");
+    String answer = keyScanner.nextLine();
+    if (answer.equals("n"))
+      return false;
+    return true;
+  }
+
+  // 게시물을 입력받아 인스턴스를 생성하는 메서드
+  void input() {
+
+    Board board = new Board();
+    System.out.print("제목? ");
+    board.title = keyScanner.nextLine();
+    System.out.print("내용? ");
+    board.contents = keyScanner.nextLine();
+    System.out.print("암호? ");
+    board.password = keyScanner.nextLine();
+    this.boards[this.i++] = board;
+  }
+}
+
+/*
+ */

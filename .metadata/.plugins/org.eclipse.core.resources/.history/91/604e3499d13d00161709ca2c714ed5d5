@@ -1,0 +1,14 @@
+package step08.ex05;
+
+public class SUV extends Car {
+  int weight;
+  
+  {
+    System.out.println("SUV 인스턴스 블록...");
+  }
+  
+  public SUV() {
+    //super(); //<= 수퍼 클래스의 기본 생성자를 호출하는 명령이 숨겨져 있다.
+    System.out.println("SUV() 생성자 호출됨");
+  }
+}

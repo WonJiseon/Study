@@ -1,0 +1,18 @@
+/* 주제: 상속 - 인스턴스 생성
+ * 
+ */
+package step08.ex06;
+
+import step08.ex05.SUV;
+
+public class Exam062 {
+  public static void main(String[] args) {
+   SUV r = new SUV();
+   
+   System.out.printf("cc = %d\n", r.cc);
+   System.out.printf("maker = %s\n", r.maker);
+   System.out.printf("capacity = %d\n", r.capacity);
+   System.out.printf("weight = %d\n", r.weight);
+   
+  }
+}

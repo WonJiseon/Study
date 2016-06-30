@@ -1,0 +1,16 @@
+/* 주제: 상속- 인스턴스 변수의 상속 (2단계)
+ * => 사용자 정보에 전화번호와 재직여부를 추가하고 싶다.
+ * => 해결책? 새 클래스를 만든다.
+ */
+package step08.ex01;
+
+public class Exam055_2 {
+
+  public static void main(String[] args) {
+    User u1 = new User();
+    
+    u1.name = "홍길동";
+    u1.email = "hong@test.com";
+    u1.password = "1111";
+  }
+}
